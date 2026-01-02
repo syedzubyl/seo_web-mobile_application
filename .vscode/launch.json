@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter: Sample App (Fixed Port)",
+            "request": "launch",
+            "type": "dart",
+            "program": "sample_application_flow/lib/main.dart",
+            "args": [
+                "--web-port",
+                "55557",
+                "-d",
+                "chrome"
+            ]
+        },
+        {
+            "name": "Jaspr: Landing Page",
+            "request": "launch",
+            "type": "dart",
+            "program": "landing_web/lib/main.dart", 
+            "args": ["serve"],
+            "toolArgs": ["--mode", "static"] 
+            // Note: Jaspr often runs better via terminal 'jaspr serve', 
+            // but this is a standard Dart launch attempt if they want to try.
+            // A better approach for Jaspr is often just a terminal task.
+        }
+    ]
+}
